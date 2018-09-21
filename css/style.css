@@ -1,0 +1,245 @@
+/* Global properties */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+/* color of every hr */
+hr {
+    width: 100px;
+    background-color: orange;
+}
+
+
+
+
+
+
+/* Practice divs properties */
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+ .red {
+    background-color: red;
+ }
+ .orange {
+    background-color: orange;
+ }
+ .purple {
+    background-color:purple;
+ }
+
+.box {
+    height: 100px;
+}
+.box-sm {
+    height: 50px;
+}
+
+.page-box {
+    height: 400px;
+}
+
+
+
+
+
+
+
+/* Navigation */
+
+nav {
+    background: transparent;
+    /* padding: 10px 100px; */
+    box-sizing: border-box;
+    transition: .3s;
+    z-index: 1;
+    position: fixed;
+}
+
+
+.navbar-brand {
+    color: white !important;
+    font-family: 'Courgette';
+    font-size: 25px;
+}
+
+.nav-link {
+    margin-left: 20px !important;
+    color: white !important;
+    font-size: 17px !important;
+    font-weight: 590 !important;
+    letter-spacing: 2.5px;
+}
+
+.nav-link:hover {
+    color: orange !important;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* home page */
+#home-background {
+    background-image: url('../images/background2.jpg');
+    /* filter: blur(5px);  */
+    height: 100vh;
+    /* creating parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-main-container {
+    z-index: 1;
+    /* background-color: purple; */
+    position: relative;
+    top: 15vh;
+    height: 70vh;
+    width: 80vw;
+    /* text-align: center; */
+}
+#centering-container {
+    position: relative;
+    top: 10vh;
+}
+
+
+
+
+
+
+
+/* Portfolio */
+
+#portfolio-desc {
+    padding: 10vh 0;
+}
+
+#portfolio {
+    padding: 20vh 0;
+    background: #111;
+}
+
+
+
+
+
+
+
+
+/* Contact section */
+
+#contact {
+    padding: 20vh 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 1vh 0;
+    background: #111;
+    /* background: #333 a lighter color */
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer ul li {
+    display: inline;
+    padding: 3vw; 
+}
+
+footer ul li a {
+    display: inline;
+    color: white !important;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* hover */
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: orange !important;
+    transition: 0.2s;
+}
+
+.footer-link-div {
+    padding-right: 0;
+    text-align: center;
+    margin: 0;
+
+}
+
+.copyright {
+    color: white !important;
+    background: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+
+}
+
+
+/* TABLET */
+
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+
+/* changes to navigation bar */
+
+/* color of the navigation bar */
+nav#nav {
+    background-color: orange !important;
+      
+}
+.nav-link:hover {
+    background-color: blue !important;
+}
+nav#nav a {
+    color: black !important;
+}
+
+}
