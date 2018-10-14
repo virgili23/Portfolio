@@ -1,20 +1,9 @@
-/*
-49
-51
-70
-99
-77
-94/99
-
-91hp
-*/
-
 // Navigation bar scrolling properties
 
 // function that runs when page loads so changes will stay after a refresh
 $(function() {
-  // Run on load
   changeHeaderColor();
+  //scrollMarker();
   //mobileNav();
   // on scroll, run this function again, as the condition will change once scrolled
   $(window).scroll(changeHeaderColor);
@@ -23,47 +12,42 @@ $(function() {
 });
 
 
+
 // adds the following css after user has scrolled this far down
 function changeHeaderColor() {
 
   nav = $('#nav');
-//600 is max for mobile, but 650 just to be safe
-  if ( ($(window).scrollTop() > nav.height()) && (( $(window).width() > 650 )) ) {
-    nav.css("background-color", "rgba(0,0,0,0.8)");
+  // brand = $('.navbar-brand');
+// These changes take place if DOM width is larger than tablets
+  if ( ($(window).scrollTop() > nav.height()) && (( $(window).width() > 998 )) ) {
+    // nav.css("background-color", "rgba(0,0,0,0.8)");
+    nav.css("background-color", "#111");
   } else {
     nav.css("background", "transparent");
   }
 };
 
-// function mobileNav() {
+// function for changing word colors
+// nav link is the words on links
+function scrollMarker() {
+  
+  // for the sections
+  portfolio = $('#portfolio');
+  nav = $('#nav');
 
-//   if ( $(window).width() < 701 ) {
-//     nav.css("background-color", "blue");
-//   }
-// }
+  // for the words themselves
+  homeLink = $('#1');
+  portfolioLink = $('#2');
+  contactLink = $('#3');
 
+  // functions
+  // portfolioLink.attr('id', 'scroll-marker');
 
+  if ( $(window).scrollTop() > nav.height() ) {
 
+    portfolioLink.attr('id', 'scroll-marker');
+  }
 
-
-
-// change background color after scroll
-// $(function() {
-//   $(document).scroll(function() {
-//     nav = $('.fixed-top');
-//     nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
-//   });
-// });
-
-// change text color after scroll
-// $(function() {
-//   $(document).scroll(function() {
-//     var navLinks = $('.nav-link');
-//     navLinks.toggleClass('changed', $(this).scrollTop() > nav.height());
-//   });
-// });
+};
 
 
-
-    
-    
