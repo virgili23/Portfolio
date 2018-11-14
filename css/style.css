@@ -1,110 +1,3 @@
-/* Global properties */
-
-body,
-html {
-  width: 100%;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Raleway', Arial, sans-serif;
-  text-align: center;
-  font-weight: 400;
-}
-/* color of every hr */
-hr {
-    width: 100px;
-    background-color: orange;
-}
-
-h1 {
-    color: white;
-    font-weight: 700;
-    letter-spacing: 2px;
-   
-
-}
-
-p {
-    letter-spacing: 1.3px;
-    font-weight: 500;
-    line-height: 2;
-}
-
-.dropdown {
-    padding: 30px 30px;
-}
-
-/* for the images on portfolio items */
-
-.box {
-    height: 300px;
-    justify-content: space-around;
-   
-}
-
-
-
-/* portfolio items go down here */
-
-.portfolio-col {
-margin: 10px;
-padding: 0px;
-}
-
-.portfolio-col:hover {
-    transform: scale(1.05);
-    transition: .2s ease;
-    box-shadow: 0 0  1px white;
-}
-
-
-.container-portfolio {
-position: relative;
-width: 100%;
-}
-
-.container-portfolio:hover .overlay {
-opacity: 1;
-height: 100%;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-
-  .text-portfolio,
-  .text-portfolio-desc {
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -2vw);
-    -ms-transform: translate(-50%, -200%);
-    text-align: center;
-  }
-  
-  .text-portfolio-desc {
-    font-size: 12px;
-    transform: translate(-50%, 1vw);
-    -ms-transform: translate(-50%, 80%);
-  }
-
-
-
-
-
 /* Practice divs properties */
 .black {
     color: black;
@@ -130,18 +23,68 @@ height: 100%;
     background-color:purple;
  }
 
+/* possible official color? #80b3ff */
 
-.box-sm {
-    height: 50px;
+
+
+
+/* Global properties */
+
+body,
+html {
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
-.page-box {
-    height: 400px;
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+hr {
+    width: 100px;
+    background-color: orange;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+   
+
+}
+
+p {
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    line-height: 2;
 }
 
 
 
+/* End of global features */
 
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* .dropdown {
+    padding: 30px 30px;
+} */
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 
 
@@ -149,7 +92,6 @@ height: 100%;
 
 nav {
     background: transparent;
-    /* padding: 10px 100px; */
     box-sizing: border-box;
     transition: .3s;
     z-index: 1;
@@ -160,23 +102,26 @@ nav {
 .navbar-brand {
     color: white !important;
     font-family: 'Courgette';
-    
-    font-size: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
 
 /* The wording of the navigation links */
 .nav-link {
-    margin-left: 20px !important;
+    margin-left: 5px !important;
+    margin-right: 2px !important;
     color: white !important;
-    font-size: 17px !important;
-    font-weight: 590 !important;
-    letter-spacing: 2.5px;
+    font-size: 15px !important;
+    /* font-weight: 590 !important; */
+    letter-spacing: 1px;
+    /* background: red; */
 }
 
 .nav-link:hover {
-    color: orange !important;
-    transition: 0.3s;
+    color: white !important;
+    text-shadow: 0.3px 0.4px white;
+    transition: 0.5s ease;
 }
 
 /* scroll markers mark words after scrolling past a certain point */
@@ -187,16 +132,11 @@ nav {
     font-weight: 590 !important;
     letter-spacing: 2.5px;
 }
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* home page */
 #home-background {
@@ -208,6 +148,21 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* home background overlay */
+.header-overlay {
+    height: 100vh;
+    max-width: 100vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #225470; */
+    /* background-color: #333; */
+    background-color: #0d0d0d;
+    z-index: 1;
+    opacity: 0.75;
 }
 
 #home-main-container {
@@ -224,47 +179,244 @@ nav {
     top: 10vh;
 }
 
-.intro-paragraph {
+.name {
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    /* font-family: 'Roboto'; */
     color: white;
-    letter-spacing: 0.3 vw;
+    font-size: 4em;
+    padding: 2% 0;
+}
+
+.intro-paragraph {
+    font-family: 'Montserrat';
+    padding: 5% 0;
+    color: white;
+    letter-spacing: 0.2em;
     
 }
 
 
 
+/* global class for description box divs */
 
-
-
-
-/* Portfolio */
-
-#portfolio-desc {
+.desc-div {
     padding: 10vh 0;
 }
 
-#portfolio {
-    padding: 20vh 0;
-    background: #111;
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* About me Section */
+
+/* grid container */
+
+#about-desc {
+    /* background: #b3b3b3; */
+    background: #fff;
+}
+
+#about {
+    /* background: #b3b3b3; */
+    background: #fff;
 }
 
 
+.about-grid {
+    /* purple (whole thing) */
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-end; */
+    /* background-color: purple; */
+    width: 70vw;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+
+.me {
+    /* yellow */
+    max-width: 300px;
+}
+
+
+.about-me {
+    /* blue */
+    padding: 0% 5%;
+    max-width: 600px;
+}
+
+.technologies {
+    /* background: green; */
+    padding: 3% 0%;
+    margin: 0 5%;
+}
+
+.big-tech-container {
+    position: relative;
+    width: 100%;
+    /* background: orange; */
+    margin: auto;
+}
+
+.tech-container {
+    width: 25%;
+}
+
+/* icons */
+i.fa-html5 {
+    color: orangered;
+}
+.fa-js {
+    color: yellow;
+}
+.fa-github-square {
+    color: black;
+}
+i.fa-database {
+    color: skyblue;
+}
+
+
+/* About me Section Ends */
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* Portfolio Features*/
 
 
 
+#portfolio-desc {
+    background: #1a1a1a;
+}
+
+#portfolio {
+    background:  #f2f2f2;
+}
 
 
+/* for the images on portfolio items */
+.box {
+    height: 300px;
+    justify-content: space-around;
+   
+}
+
+/* portfolio items go down here */
+
+.portfolio-col {
+    margin: 10px;
+    padding: 0px;
+}
+
+.portfolio-col:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
+    box-shadow: 0 0  1px white;
+}
+
+
+.container-portfolio {
+    position: relative;
+    width: 100%;
+}
+
+.container-portfolio:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text-portfolio,
+.text-portfolio-desc {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -2vw);
+    -ms-transform: translate(-50%, -200%);
+    text-align: center;
+}
+
+.text-portfolio-desc {
+    font-size: 12px;
+    transform: translate(-50%, 1vw);
+    -ms-transform: translate(-50%, 80%);
+}
+
+
+.box-sm {
+    height: 50px;
+}
+
+.page-box {
+    height: 400px;
+}
+
+/* End of PORTFOLIO features */
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* Contact section */
 
 #contact {
     padding: 20vh 0;
+    /* background: #b3b3b3; */
+    background: #fff;
 }
+a#send-mail {
+    padding: 0% 5%;
+    margin: 5% 5%;
+}
+
+#send-mail {
+    transition: ease 0.5s;
+    font-size: 2em;
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+#send-mail:hover {
+    text-decoration: none;
+    transition: ease 0.5s;
+    color: orangered;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* Footer */
 
 footer {
     padding: 1vh 0;
-    background: #111;
+    background: #1a1a1a;
     /* background: #333 a lighter color */
 }
 
@@ -279,14 +431,15 @@ footer ul {
 
 footer ul li {
     display: inline;
-    padding: 2vw; 
+    padding: 1vw; 
 }
 
 footer ul li a {
     display: inline;
     color: white !important;
     text-align: center;
-    padding: 16px;
+    font-size: 0.9em;
+    padding: 0px;
     text-decoration: none;
 }
 
@@ -294,8 +447,9 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: none;
-    color: orange !important;
-    transition: 0.2s;
+    color: white !important;
+    text-shadow: 0.3px 0.4px white;
+    transition: 0.5s ease;
 }
 
 .footer-link-div {
@@ -308,27 +462,29 @@ footer ul li a:hover {
 .copyright {
     padding-top: 10px;
     color: white !important;
-    background: #111;
+    background: #1a1a1a;
 }
 
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* MEDIA QUERIES */
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* TABLET */
 
 @media screen and (max-width: 992px) {
 
 nav {
-    background-color: #111 !important;
+    background-color: #1a1a1a !important;
 }
 .navbar-brand {
     color: white !important;
@@ -340,10 +496,11 @@ nav {
 
 }
 
-
-
-
-
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* MOBILE */
 @media screen and (max-width: 600px) {

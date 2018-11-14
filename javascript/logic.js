@@ -19,9 +19,15 @@ function changeHeaderColor() {
   nav = $('#nav');
   // brand = $('.navbar-brand');
 // These changes take place if DOM width is larger than tablets
-  if ( ($(window).scrollTop() > nav.height()) && (( $(window).width() > 998 )) ) {
+  // if ( ($(window).scrollTop() > nav.height()) && (( $(window).width() > 998 )) ) {
+    if ( ($(window).scrollTop() > ($(window).height() - nav.height())) && (( $(window).width() > 998 )) ) {
     // nav.css("background-color", "rgba(0,0,0,0.8)");
-    nav.css("background-color", "#111");
+    // nav.css("background-color", "#1a1a1a");
+    nav.css({
+      "background-color": "#333",
+      "transition": "0.3s ease"
+    });
+    // nav.addclass("fadeInDown");
   } else {
     nav.css("background", "transparent");
   }

@@ -22,6 +22,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
 <!-- Courgette -->
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<!-- Montserrat -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 <!-- Animate.css -->
 <link rel="stylesheet"
@@ -29,6 +31,8 @@
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <!-- materialize -->
 <!-- Compiled and minified CSS -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
@@ -71,6 +75,7 @@
 
 <!-- background starts from here since it is behind navigation bar as well -->
 <div class="home-div">
+    <div class="header-overlay"></div>
     <div class="page-box" id="home-background">
     <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top" id="nav">
@@ -94,10 +99,13 @@
                     <a class="nav-link anchor" id='1' href="#top-page" style="color: white; font-size: 20px;">HOME</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link anchor" id='2' href="#portfolio" style="color: white; font-size: 20px;">PORTFOLIO</a>
+                        <a class="nav-link anchor" id='2' href="#about-desc" style="color: white; font-size: 20px;">ABOUT ME</a>
+                        </li>
+                    <li class="nav-item">
+                    <a class="nav-link anchor" id='3' href="#portfolio-desc" style="color: white; font-size: 20px;">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link anchor" id='3' href="#contact" style="color: white; font-size: 20px;">CONTACT</a>
+                    <a class="nav-link anchor" id='4' href="#contact" style="color: white; font-size: 20px;">CONTACT</a>
                     </li>
                 </ul>
             </div> 
@@ -112,51 +120,137 @@
             <div class="row" id="centering-container">
                 <div class="col-lg-10 mx-auto">
                     <br>
-                    <h1>Virgilio Baez</h1>
+                    <h3 class="animated fadeIn name">Virgilio Baez</h3>
                     <br>
                 </div>
             
                 <div class="col-lg-8 mx-auto">
                        <br> 
-                    <p class="intro-paragraph">
-                        
-                    
-                        I am a Full-Stack web developer in Charlotte, NC. I've been developing since I was thirteen,
-                        but I grew to love this hobby even more after taking computer science in school. I am now able to 
-                        create many applications using these technologies and frameworks!
+                    <p class="intro-paragraph animated fadeIn">
+                        Full-Stack Web Developer from Charlotte, NC
                     </p>
                         <br>
                 </div>   
-                <div class="col-lg-5 mx-auto dropdown">
+                <!-- <div class="col-lg-5 mx-auto dropdown">
                     <br>
 
-                <!-- <a href="#portfolio">
+                 <a href="#portfolio">
                     <button type="button">
                             
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                            
                     </button>
-                </a> -->
+                </a> 
                     <br>
-                </div>   
+                </div>    -->
             </div>
         </div>
 
     </div>
 </div>
-
-<!-- Portfolio description div -->
-<section id="portfolio-desc">
+<!-- about me and tech -->
+<section class="desc-div" id="about-desc">
     <div>
-        <h2>PORTFOLIO</h2>
+        <h2>ABOUT ME</h2>
         <hr>
-        <p>Below are projects I've made so far; some of them are a work in progress.</p>
+        
     </div>
 </section>
 
+<!-- goes into about me -->
+<section id="about">
+    <div class="about">
+        <!-- Picture and Description about me -->
+        <div class="about-grid">
+            <!-- picture -->
+            <div class="me">
+                <img src="images/me.jpg" style="width: 250px; height: 300px;"/>
+            </div>
+            <!-- about me -->
+            <div class="about-me">
+                <p>
+                    I am a Full-Stack web developer in Charlotte, NC. I've been developing since I was thirteen,
+                    but I grew to love this hobby even more after taking computer science in school. I am always 
+                    fascinated by what applications you can create using these technologies and frameworks!
+                </p>
+                <p>
+                    I took my passion from technology and gaming to develop many applications that interest me.
+                    And in the future, I hope to create digital tools that help with everyday life!
+                </p>
+            </div>
+        </div>
+        <!-- technologies -->
+        <div class="technologies">
+           
+                <h1 style="color: black;">Technologies I use:</h1><hr>
+          
+
+            <div class="row big-tech-container">
+
+                <!-- html css -->
+                <div class="tech-container">
+                    <div>
+                        <i class="fa-4x fab fa-html5 mb-3 sr-icons" aria-hidden="true"></i>
+                        <h3>HTML & CSS</h3>
+                        <p>I use these Front-end technologies and frameworks such as Bootstrap to 
+                            make websites look and feel alive.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- JS -->
+                <div class="tech-container">
+                    <div>
+                        <i class="fa-4x fab fa-js text-primary mb-3 sr-icons" style="color: yellow !important;"></i>
+                        <h3>Javascript</h3>
+                        <p>Great Full-Stack tool to not only make websites reactive, but to work the back-end as well.</p>
+                    </div>
+                </div>
+
+                <!-- git -->
+                <div class="tech-container">
+                    <div>
+                        <i class="fa-4x fab fa-github-square text-primary mb-3 sr-icons" style="color: black !important;"></i>
+                        <h3>Git</h3>
+                        <p>Website version control.</p>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="tech-container">
+                    <div>
+                        <i class="fa-4x fas fa-database mb-3 sr-icons" aria-hidden="true"></i>
+                        <h2>Database</h2>
+                        <p>Using Firebase and MySQL, I can store data to feed the Back-End.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- Portfolio description div -->
+<!-- <section id="portfolio-desc">
+    <div>
+        <h2 style="color: white;">PORTFOLIO</h2>
+        <hr>
+        <p>Below are projects I've made so far; some of them are a work in progress.</p>
+    </div>
+</section> -->
+
 <!-- Portfolio section -->
-<section id="portfolio">
+<section class="desc-div" id="portfolio">
     <div class="container">
+
+        <!-- portfolio description -->
+        <div>
+            <h2>PORTFOLIO</h2>
+            <hr>
+            <p>Below are projects I've made so far; some of them are a work in progress.</p>
+        </div>
         <div class="row">
             <!-- start at full size on mobile, then take 1/3 on desktop -->
             <!-- <div class="col-6 col-md-3 portfolio-col"> -->
@@ -224,7 +318,7 @@
                     I will get back to you as soon as possible!
                 </p>
                 <a id="send-mail" class="button" href="mailto:virgil17@live.com">
-                    <span aria-hidden="true" class="icon-mail"></span>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                     virgil17@live.com
                 </a>
             </div>
@@ -237,21 +331,25 @@
     <div class="container footer-link-div">
         <ul>
             <li>
-                <a href="#">HOME</a>
+                <a href="#top-page">HOME</a>
             </li>
 
             <li>
-                <a href="#">PORTFOLIO</a>
+                    <a href="#top-page">ABOUT ME</a>
             </li>
 
             <li>
-                <a href="#">CONTACT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+            </li>
+
+            <li>
+                <a href="#contact">CONTACT</a>
             </li>
             
         </ul>
     </div>
     <div class="copyright">
-        © 2018 | Designed by Virgilio Baez
+        © 2018 | Developed by Virgilio A. Baez
     </div>
 </div>
 </footer>
