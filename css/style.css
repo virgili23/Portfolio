@@ -104,6 +104,7 @@ nav {
     font-family: 'Courgette';
     font-size: 28px;
     letter-spacing: 1px;
+    margin: 0;
 }
 
 
@@ -112,14 +113,14 @@ nav {
     margin-left: 5px !important;
     margin-right: 2px !important;
     color: white !important;
-    font-size: 15px !important;
+    font-size: 13px !important;
     /* font-weight: 590 !important; */
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     /* background: red; */
 }
 
 .nav-link:hover {
-    color: white !important;
+    color: #ff944d !important;
     text-shadow: 0.3px 0.4px white;
     transition: 0.5s ease;
 }
@@ -177,6 +178,7 @@ nav {
 #centering-container {
     position: relative;
     top: 10vh;
+    margin: 0;
 }
 
 .name {
@@ -185,12 +187,14 @@ nav {
     /* font-family: 'Roboto'; */
     color: white;
     font-size: 4em;
-    padding: 2% 0;
+    padding: 0;
 }
 
 .intro-paragraph {
+    /* position: absolute; */
+    margin: auto;
     font-family: 'Montserrat';
-    padding: 5% 0;
+    padding: 0;
     color: white;
     letter-spacing: 0.2em;
     
@@ -240,18 +244,20 @@ nav {
 .me {
     /* yellow */
     max-width: 300px;
+    
 }
 
 
 .about-me {
     /* blue */
-    padding: 0% 5%;
-    max-width: 600px;
+    /* background: blue; */
+    padding: 0% 10%;
+    max-width: 700px;
 }
 
 .technologies {
     /* background: green; */
-    padding: 3% 0%;
+    padding: 8% 0%;
     margin: 0 5%;
 }
 
@@ -260,10 +266,17 @@ nav {
     width: 100%;
     /* background: orange; */
     margin: auto;
+    margin-top: 8%;
 }
 
 .tech-container {
     width: 25%;
+    font-size: 0.9em;
+
+}
+
+.tech-container div p {
+    margin: 5px 15px;
 }
 
 /* icons */
@@ -278,6 +291,41 @@ i.fa-html5 {
 }
 i.fa-database {
     color: skyblue;
+}
+
+
+/* resume */
+
+.resume {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5% 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.resume:hover {
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+a .resume {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a .resume:hover {
+    color: white !important;
+    transition: 0.3s ease;
 }
 
 
@@ -384,9 +432,10 @@ i.fa-database {
 /* Contact section */
 
 #contact {
-    padding: 20vh 0;
+    padding: 25vh 0;
     /* background: #b3b3b3; */
-    background: #fff;
+    /* background: #fff; */
+    background: #0000b3;
 }
 a#send-mail {
     padding: 0% 5%;
@@ -396,14 +445,14 @@ a#send-mail {
 #send-mail {
     transition: ease 0.5s;
     font-size: 2em;
-    color: blueviolet;
+    color: white;
     font-family: sans-serif;
 }
 
 #send-mail:hover {
     text-decoration: none;
     transition: ease 0.5s;
-    color: orangered;
+    color: #ffc299;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -473,6 +522,46 @@ footer ul li a:hover {
 
 /* MEDIA QUERIES */
 
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* Special Features for Big tablets */
+@media screen and (max-width: 1202px) {
+
+    
+    
+    /* about me */
+    
+    .about-me {
+        /* background: blue; */
+        padding: 0% 5%;
+        max-width: 600px; 
+    }
+    
+    .about-grid {
+        /* background: purple; */
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    .tech-container {
+        width: 50%;
+        font-size: 0.9em;
+    }
+    
+    }
+
 /* -------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
@@ -492,6 +581,29 @@ nav {
 
 .nav-link {
     color: white !important;
+    font-size: 16px !important;
+}
+
+
+/* about me */
+
+.about-me {
+    
+    /* blue */
+    /* background: blue; */
+    padding: 0% 5%;
+    max-width: 600px; 
+}
+
+.about-grid {
+    /* background: purple; */
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-end; */
+    /* background-color: purple; */
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 40px;
 }
 
 }
@@ -502,11 +614,112 @@ nav {
 /* -------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------- */
 
+/* special features for smaller tablets */
+
+@media screen and (max-width: 880px) {
+
+    /* about me */
+.about-grid {
+    /* background: purple; */
+    display: grid;
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    /* background-color: purple; */
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.about-me {
+    
+    /* blue */
+    /* background: blue; */
+    padding: 5% 5%;
+    /* max-width: 600px;  */
+    width: 90vw;
+}
+
+.me {
+    /* background: yellow; */
+    padding: 0% 25%;
+    /* justify-content: center; */
+}
+
+.tech-container {
+    width: 100%;
+}
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
 /* MOBILE */
 @media screen and (max-width: 600px) {
 
 p {
     padding: 0 10px;
+}
+
+/* home */
+
+.name {
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    /* font-family: 'Roboto'; */
+    color: white;
+    font-size: 3em;
+    padding: 0;
+}
+
+
+/* about me */
+.about-grid {
+    /* background: purple; */
+    display: grid;
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    /* background-color: purple; */
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.about-me {
+    
+    /* blue */
+    /* background: blue; */
+    padding: 5% 5%;
+    /* max-width: 600px;  */
+    width: 90vw;
+}
+
+.me {
+    /* background: yellow; */
+    padding: 0% 25%;
+    /* justify-content: center; */
+}
+
+/* technologies */
+
+.technologies {
+    /* background: green; */
+    padding: 8% 0%;
+    margin: 0 5%;
+}
+
+.big-tech-container {
+    position: relative;
+    width: 100%;
+    /* background: orange; */
+    margin: auto;
+    margin-top: 8%;
 }
 
 }

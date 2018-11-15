@@ -79,7 +79,7 @@
     <div class="page-box" id="home-background">
     <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top" id="nav">
-            <a class="navbar-brand" href="#top-page">
+            <a class="navbar-brand" href="#top-page" id="brand">
                 <!-- logo -->
                 <img src="./images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="Virgil Baez">
                 Virgilio Baez
@@ -102,7 +102,7 @@
                         <a class="nav-link anchor" id='2' href="#about-desc" style="color: white; font-size: 20px;">ABOUT ME</a>
                         </li>
                     <li class="nav-item">
-                    <a class="nav-link anchor" id='3' href="#portfolio-desc" style="color: white; font-size: 20px;">PORTFOLIO</a>
+                    <a class="nav-link anchor" id='3' href="#portfolio" style="color: white; font-size: 20px;">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link anchor" id='4' href="#contact" style="color: white; font-size: 20px;">CONTACT</a>
@@ -120,7 +120,7 @@
             <div class="row" id="centering-container">
                 <div class="col-lg-10 mx-auto">
                     <br>
-                    <h3 class="animated fadeIn name">Virgilio Baez</h3>
+                    <h4 class="animated fadeIn name">Virgilio Baez</h4>
                     <br>
                 </div>
             
@@ -164,7 +164,7 @@
         <div class="about-grid">
             <!-- picture -->
             <div class="me">
-                <img src="images/me.jpg" style="width: 250px; height: 300px;"/>
+                <img src="images/myphoto2.jpg" style="width: 280px; border-radius: 100%;" alt="me"/>
             </div>
             <!-- about me -->
             <div class="about-me">
@@ -179,6 +179,10 @@
                 </p>
             </div>
         </div>
+
+        <div class="resume-container">
+            <a href="docs/resume.pdf" download><button class="resume">Download My Resume</button></a>
+        </div>
         <!-- technologies -->
         <div class="technologies">
            
@@ -192,7 +196,7 @@
                     <div>
                         <i class="fa-4x fab fa-html5 mb-3 sr-icons" aria-hidden="true"></i>
                         <h3>HTML & CSS</h3>
-                        <p>I use these Front-end technologies and frameworks such as Bootstrap to 
+                        <p>I use Front-end technologies and frameworks such as Bootstrap and Materialize to 
                             make websites look and feel alive.
                         </p>
                     </div>
@@ -203,7 +207,9 @@
                     <div>
                         <i class="fa-4x fab fa-js text-primary mb-3 sr-icons" style="color: yellow !important;"></i>
                         <h3>Javascript</h3>
-                        <p>Great Full-Stack tool to not only make websites reactive, but to work the back-end as well.</p>
+                        <p>Great Full-Stack tool to not only make websites reactive, but to work the back-end as well.
+                            I also use frameworks and libraries such JQuery, Express, Sequelize and many others.
+                        </p>
                     </div>
                 </div>
 
@@ -212,7 +218,7 @@
                     <div>
                         <i class="fa-4x fab fa-github-square text-primary mb-3 sr-icons" style="color: black !important;"></i>
                         <h3>Git</h3>
-                        <p>Website version control.</p>
+                        <p>Website version control to share, manage, and collaborate with code.</p>
                     </div>
                 </div>
 
@@ -221,7 +227,7 @@
                     <div>
                         <i class="fa-4x fas fa-database mb-3 sr-icons" aria-hidden="true"></i>
                         <h2>Database</h2>
-                        <p>Using Firebase and MySQL, I can store data to feed the Back-End.</p>
+                        <p>Using Firebase, MongoDB or MySQL, I can store data to feed the Back-End.</p>
                     </div>
                 </div>
 
@@ -308,13 +314,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="black">Let's Create!</h1>
+                <h1>Let's Create!</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <p>Feel free to send me an email using the address below as a reference, or you may simply click to send me an email directly. 
+                <p style="color: white; font-size: 1.3em;">Feel free to send me an email using the address below as a reference, or you may simply click to send me an email directly. 
                     I will get back to you as soon as possible!
                 </p>
                 <a id="send-mail" class="button" href="mailto:virgil17@live.com">
@@ -335,7 +341,7 @@
             </li>
 
             <li>
-                    <a href="#top-page">ABOUT ME</a>
+                    <a href="#about-desc">ABOUT ME</a>
             </li>
 
             <li>
