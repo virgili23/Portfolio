@@ -23,7 +23,7 @@ function changeHeaderColor() {
 
   brand = $('#brand');
 
-  // brand = $('.navbar-brand');
+  
 // These changes take place if DOM width is larger than tablets
   // if ( ($(window).scrollTop() > nav.height()) && (( $(window).width() > 998 )) ) {
     if ( ($(window).scrollTop() > ($(window).height() - nav.height())) && (( $(window).width() > 908 )) ) {
