@@ -45,19 +45,29 @@ body {
 }
 
 hr {
-    width: 100px;
-    background-color: orange;
+    width: 200px;
+    background-color: #FFE0AB;
 }
 
 h1 {
+    font-family: 'Quicksand';
+    font-weight: 500;
     color: white;
-    font-weight: 700;
     letter-spacing: 2px;
-   
-
 }
 
+h2 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Quicksand';
+    color: white;
+}
 p {
+    font-family: 'Quicksand';
+    font-weight: 300;
     letter-spacing: 1.3px;
     font-weight: 500;
     line-height: 2;
@@ -72,11 +82,6 @@ p {
 /* -------------------------------------------- CODE BLOCK ------------------------------------------------ */
 /* -------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------- */
-
-/* .dropdown {
-    padding: 30px 30px;
-} */
-
 
 
 
@@ -101,7 +106,8 @@ nav {
 
 .navbar-brand {
     color: white !important;
-    font-family: 'Courgette';
+    /* font-family: 'Courgette'; */
+    font-family: 'Montserrat';
     font-size: 28px;
     letter-spacing: 1px;
     margin: 0;
@@ -113,15 +119,18 @@ nav {
     margin-left: 5px !important;
     margin-right: 2px !important;
     color: white !important;
-    font-size: 13px !important;
+    font-size: 1.2em !important;
+    font-family: 'Quicksand' !important;
+    font-weight: 400;
+    /* font-family: 'Montserrat' !important; */
     /* font-weight: 590 !important; */
     letter-spacing: 3px;
     /* background: red; */
 }
 
 .nav-link:hover {
-    color: #ff944d !important;
-    text-shadow: 0.3px 0.4px white;
+    color: #668AFF !important;
+    /* text-shadow: 0.3px 0.4px white; */
     transition: 0.5s ease;
 }
 
@@ -159,11 +168,10 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    /* background: #225470; */
-    /* background-color: #333; */
     background-color: #0d0d0d;
+    /* background-color: #3653B3; */
     z-index: 1;
-    opacity: 0.75;
+    opacity: 0.60;
 }
 
 #home-main-container {
@@ -182,9 +190,12 @@ nav {
 }
 
 .name {
-    letter-spacing: 3px;
-    font-family: sans-serif;
+    /* letter-spacing: 3px; */
+    /* font-family: sans-serif; */
     /* font-family: 'Roboto'; */
+    /* font-family: 'Oswald'; */
+    font-family: 'Quicksand';
+    font-weight: 500;
     color: white;
     font-size: 4em;
     padding: 0;
@@ -193,7 +204,10 @@ nav {
 .intro-paragraph {
     /* position: absolute; */
     margin: auto;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
+    /* font-family: 'Cardo'; */
+    font-family: 'Quicksand';
+    font-weight: 300;
     padding: 0;
     color: white;
     letter-spacing: 0.2em;
@@ -205,7 +219,7 @@ nav {
 /* global class for description box divs */
 
 .desc-div {
-    padding: 10vh 0;
+    padding: 15vh 0;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -220,12 +234,16 @@ nav {
 
 #about-desc {
     /* background: #b3b3b3; */
-    background: #fff;
+    /* background: #fff; */
+    background: white;
+    padding: 10vh;
 }
 
 #about {
     /* background: #b3b3b3; */
-    background: #fff;
+    /* background: #fff; */
+    background: white;
+
 }
 
 
@@ -238,23 +256,44 @@ nav {
     width: 70vw;
     margin: auto;
     padding-bottom: 40px;
+    /* background: #668AFF; */
+    background: white;
+
 }
 
 
 .me {
     /* yellow */
     max-width: 300px;
+    /* background: blue; */
+    margin-top: 1vh;
+    background: white;
     
 }
-
+#about-span {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #668AFF;
+}
 
 .about-me {
     /* blue */
     /* background: blue; */
+    /* background: white; */
+    color: white;
     padding: 0% 10%;
     max-width: 700px;
 }
 
+.about-me p {
+    color: #668AFF;
+}
+#technologies {
+    /* background: #FFD666; */
+    /* background:#F0F0F0; */
+    /* background: #333333; */
+    background: #383838;
+}
 .technologies {
     /* background: green; */
     padding: 8% 0%;
@@ -276,7 +315,7 @@ nav {
 }
 
 .tech-container div p {
-    margin: 5px 15px;
+    margin: 5px 20px;
 }
 
 /* icons */
@@ -296,35 +335,45 @@ i.fa-database {
 
 /* resume */
 
+.resume-container {
+    padding: -10vh;
+}
+
 .resume {
-    background-color: white;
-    border: 3px solid black;
+    background: transparent;
+    /* background-color: white; */
+    border: 3px solid #668AFF;
     border-radius: 12px;
-    padding: 20px;
+    /* padding: 20px; */
+    width: 30vw;
+    height: 10vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.8em;
     margin: 5% 2px;
     cursor: pointer;
     transition: 0.3s ease;
+    font-weight: 500;
 }
 
 .resume:hover {
-    background-color: black;
+    background-color: #668AFF;
+    color: white !important;
     transition: 0.3s ease;
 }
 
 a .resume {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 600;
+    color: #668AFF;
+    font-family: 'Quicksand';
+    /* font-size: 18px; */
+    /* font-weight: 600; */
     transition: 0.3s ease;
 }
 
 a .resume:hover {
-    color: white !important;
+    /* color: white !important; */
     transition: 0.3s ease;
 }
 
@@ -347,6 +396,7 @@ a .resume:hover {
 
 #portfolio {
     background:  #f2f2f2;
+    /* padding: 10vh 0; */
 }
 
 
@@ -435,7 +485,10 @@ a .resume:hover {
     padding: 25vh 0;
     /* background: #b3b3b3; */
     /* background: #fff; */
-    background: #0000b3;
+    background: #668AFF;
+    font-family: 'Quicksand';
+    font-weight: 300;
+
 }
 a#send-mail {
     padding: 0% 5%;
@@ -444,15 +497,17 @@ a#send-mail {
 
 #send-mail {
     transition: ease 0.5s;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Quicksand';
+    letter-spacing: 2px;
+    padding-top: 15vh;
 }
 
 #send-mail:hover {
     text-decoration: none;
     transition: ease 0.5s;
-    color: #ffc299;
+    color: #FFD666;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -470,6 +525,8 @@ footer {
 }
 
 footer ul {
+    /* background: blue; */
+    justify-content: end;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -484,10 +541,13 @@ footer ul li {
 }
 
 footer ul li a {
+    /* background: blue; */
     display: inline;
     color: white !important;
     text-align: center;
-    font-size: 0.9em;
+    /* font-family: 'Quicksand' !important;
+    font-weight: 400; */
+    font-size: 1.2em;
     padding: 0px;
     text-decoration: none;
 }
@@ -496,8 +556,8 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: none;
-    color: white !important;
-    text-shadow: 0.3px 0.4px white;
+    color: #668AFF !important;
+    text-shadow: 0.3px 0.4px;
     transition: 0.5s ease;
 }
 
@@ -510,8 +570,15 @@ footer ul li a:hover {
 
 .copyright {
     padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Quicksand';
     color: white !important;
     background: #1a1a1a;
+    font-size: 1.1em;
+}
+#copyright-name {
+    font-family: 'Patrick Hand';
+    letter-spacing: 2px;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -542,6 +609,7 @@ footer ul li a:hover {
     
     .about-me {
         /* background: blue; */
+        /* margin: 0; */
         padding: 0% 5%;
         max-width: 600px; 
     }
@@ -550,14 +618,24 @@ footer ul li a:hover {
         /* background: purple; */
         display: flex;
         justify-content: space-around;
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 40px;
+        width: 90vw;
+        /* margin: auto; */
+        /* margin: 0; */
+        /* padding-bottom: 40px; */
     }
 
     .tech-container {
+        padding: 5vh;
+        margin-bottom: 0;
+        margin-top: 0;
+        /* background: green; */
         width: 50%;
         font-size: 0.9em;
+    }
+
+    .portfolio-col {
+        /* margin: 10px; */
+        /* width: 25%; */
     }
     
     }
@@ -606,6 +684,15 @@ nav {
     padding-bottom: 40px;
 }
 
+#about {
+    padding-bottom: 10vh;
+}
+
+.resume {
+    width: 50vw;
+    margin: 0;
+}
+
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -644,6 +731,12 @@ nav {
     padding: 0% 25%;
     /* justify-content: center; */
 }
+
+.resume {
+    width: 70vw;
+    margin: 0;
+}
+
 
 .tech-container {
     width: 100%;
@@ -701,10 +794,26 @@ p {
 }
 
 .me {
+    /* display: flex; */
     /* background: yellow; */
-    padding: 0% 25%;
-    /* justify-content: center; */
+    padding: 0% 0%;
+    justify-content: center;
+    margin: 0 auto;
+    /* position: relative; */
 }
+
+
+
+/* resume button */
+
+
+.resume {
+    width: 50vw;
+    height: 20vh;
+}
+
+
+
 
 /* technologies */
 

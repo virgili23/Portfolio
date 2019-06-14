@@ -30,13 +30,16 @@ function changeHeaderColor() {
     // nav.css("background-color", "rgba(0,0,0,0.8)");
     // nav.css("background-color", "#1a1a1a");
     nav.css({
-      "background-color": "#333333"
+      "background-color": "#333333",
+      "opacity": "0.95"
     });
 
     // nav.addclass("fadeInDown");
   } else {
     nav.css({
-      "background-color": "transparent"
+      "background-color": "transparent",
+      "opacity": "1"
+
     });
   }
 
