@@ -471,6 +471,47 @@ a .resume:hover {
     height: 400px;
 }
 
+
+/* Links */
+
+/* div class "links" with a tags, id of "link-desktop" (div a)*/
+/* For mobile also class "links" with id of "link-mobile" (div a)*/ 
+
+.links a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#link-desktop{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    
+}
+
+#link-desktop a {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    transition: 0.1s;
+}
+
+#link-desktop a:hover {
+    font-weight: 500;
+}
+
+.link-mobile {
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+.link-mobile a {
+    font-weight: 500;
+}
+
 /* End of PORTFOLIO features */
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -633,10 +674,6 @@ footer ul li a:hover {
         font-size: 0.9em;
     }
 
-    .portfolio-col {
-        /* margin: 10px; */
-        /* width: 25%; */
-    }
     
     }
 
