@@ -1,0 +1,10 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/c2yg5pt0m1z6/public_html/
+#  - /bin/cp index.html $DEPLOYPATH
+#  - /bin/cp style.css $DEPLOYPATH
+#  - /bin/cp logic.js $DEPLOYPATH
+ - /bin/cp * $DEPLOYPATH
+
+ 
