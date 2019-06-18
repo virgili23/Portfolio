@@ -1,3 +1,3 @@
 # Portfolio
 My personal, professional portfolio website.
-https://www.vbaez.com
+http://www.vbaez.com
